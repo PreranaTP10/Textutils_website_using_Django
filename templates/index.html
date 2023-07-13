@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Text utils by Prerana</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-md">
+    <a class="navbar-brand" href="#">Text utils</a>
+  </div>
+</nav>
+
+<form action="analyze_text" method="get">
+<div class="container mt-4">
+  <label>Enter your text here:</label><br><br>
+  <textarea class="form-control" name="text" placeholder="Enter your text here..." id="floatingTextareaDisabled" rows="5" ></textarea>
+  <br>
+
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" name="removepunc">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Remove Punctuations</label>
+  </div>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault2" name="full_cap">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Upper case</label>
+  </div>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault3" name="capital">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Capitalization</label>
+  </div><div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault4" name="line_remover">
+  <label class="form-check-label" for="flexSwitchCheckDefault">Newline Remover</label>
+  </div>
+  <div class="form-check form-switch">
+  <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault5" name="space_remover">
+  <label class="form-check-label" for="flexSwitchCheckDefault">space remover</label>
+  </div>
+
+  <button type="submit" class="btn btn-outline-primary mt-3">Analyze text</button>
+</div>
+</form>
+
+  </body>
+
+</html>
